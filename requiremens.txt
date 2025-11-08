@@ -1,0 +1,15 @@
+python-dotenv
+packaging
+fastapi
+PyYAML
+openai
+slack_sdk
+google
+protobuf
+seaborn
+matplotlib
+pandas
+router
+RapidFuzz
+uvicorn
+google-cloud-bigquery
