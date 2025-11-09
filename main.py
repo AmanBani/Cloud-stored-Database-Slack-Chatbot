@@ -18,3 +18,12 @@ def create_app():
     env = os.getenv("ENV", "LOCAL")
     logger.info(f" in {func} ENV {env} loaded\n")
     VALID_ENVS = {"LOCAL", "DEV", "STAGING", "PROD"}
+    
+    
+    if env not in VALID_ENVS:
+        logger.error("Invalid ENV Value")
+        
+    install_missing_or_missmatched()
+    
+    ai_provider = os.getenv("AI Provider")
+    if ai_provider != test_llm_connection(ai_provider)
